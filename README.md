@@ -16,28 +16,38 @@ The dataset used for this analysis can be found [here](https://s3.amazonaws.com/
 
 ## Results
 
-The dataset contained over 1.8 million reviews. To focus on reviews that were more likely to be helpful, we filtered the dataset by:
 
-- Count of Total Votes equal to or greater than 20.
+The dataset contained over 1.8 million reviews. To concentrate on reviews likely to be more helpful, we filtered the dataset based on:
+
+* Total Votes count equal to or greater than 20.
 ![TotalVoteCount](https://github.com/Nuh-Khan/Amazon_Vine_Analysis/blob/main/Images/total_votes-count.png)
 
-- Percentage of Helpful Votes to Total Votes equal to or greater than 50%. 
+* Helpful Votes percentage of Total Votes equal to or greater than 50%.
 ![Helpful](https://github.com/Nuh-Khan/Amazon_Vine_Analysis/blob/main/Images/helpful.png)
 
-This filtering reduced the total number of reviews from 1.8 million to 51.1K. This allowed us to answer the following questions:
+This filtering reduced the total number of reviews from 1.8 million to 51.1K, allowing us to address the following questions:
 
-**1. How many Vine reviews and non-Vine reviews were there?**
+**1. What is the number of Vine and non-Vine reviews?**
 
-- **Vine** members made up only 10.7% (607) of the reviews, while the remaining 89.2% were **Non-Vine** members (50,522).
+* **Vine** members contributed 10.7% (607) of the reviews, while the remaining 89.3% came from **Non-Vine** members (50,522).
 
-**2. How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?**
+**2. How many 5-star Vine reviews were there? How many 5-star non-Vine reviews were there?**
 
-- **Vine** members gave 257 out of 607 reviews a 5-star rating.
-- **Non-Vine** members gave 25,220 out of 50,522 reviews a 5-star rating.
+* **Vine** members provided 257 out of 607 5-star reviews.
+* **Non-Vine** members offered 25,220 out of 50,522 5-star reviews.
 
 **3. What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?**
 
-- 42.34% of the reviews for **Vine** members were rated 5 stars.
-- 49.92% of the reviews for **Non-Vine** members were rated 5 stars.
+* 42.34% of **Vine** member reviews received a 5-star rating.
+* 49.92% of **Non-Vine** member reviews received a 5-star rating.
+
 
 ![All3](https://github.com/Nuh-Khan/Amazon_Vine_Analysis/blob/main/Images/all3.png)
+
+## Summary
+
+Based on the results, **Vine** members did not exhibit bias when rating products, as the proportion of 5-star ratings was around 7.6% lower for **Vine** members compared to **Non-Vine** members (42.3% vs. 49.9%). This implies that Vine customers might be more discerning when providing their reviews. To further validate this assumption, we should analyze all the data without filtering it by the ratio of helpful to total votes, as was done in this analysis. Examining the complete data set would offer more insight and help us strengthen our assumption.
+
+Moreover, performing the same analysis with datasets from various product categories can yield a more holistic view of whether **Vine** member reviews are biased.
+
+

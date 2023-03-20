@@ -20,9 +20,10 @@ The dataset contained over 1.8 million reviews. To focus on reviews that were mo
 
 - Count of Total Votes equal to or greater than 20.
 - Percentage of Helpful Votes to Total Votes equal to or greater than 50%.
-
+![TotalVoteCount] (https://github.com/Nuh-Khan/Amazon_Vine_Analysis/blob/main/Images/total_votes-count.png)
+![Helpful] (https://github.com/Nuh-Khan/Amazon_Vine_Analysis/blob/main/Images/helpful.png)
 This filtering reduced the total number of reviews from 1.8 million to 51.1K. This allowed us to answer the following questions:
-
+![All3] (https://github.com/Nuh-Khan/Amazon_Vine_Analysis/blob/main/Images/all3.png)
 **1. How many Vine reviews and non-Vine reviews were there?**
 
 - **Vine** members made up only 10.7% (607) of the reviews, while the remaining 89.2% were **Non-Vine** members (50,522).
